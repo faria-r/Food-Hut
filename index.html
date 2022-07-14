@@ -9,7 +9,7 @@
 </head>
 <body>
     <section class="Main-section">
-            <nav class="menu-bar">
+            <nav class="menu-bar" id="hidden">
                 <div class="top-menu left-menu">
                     <ul>
                         <li>Home</li>
@@ -18,7 +18,7 @@
                         <li>Book-Table</li>
                     </ul>
                 </div>
-                <div class="middle-menu">
+                <div id="title" class="test">
                     <h1>Food Hut</h1>
                 </div>
                 <div class="top-menu">
@@ -144,5 +144,32 @@
             </div>
         </section>
     </main>
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        function myFunction() {
+          if (document.documentElement.scrollTop > 50) {
+            document.getElementById("title").className = "middle-menu";
+          } else {
+            document.getElementById("title").className = "test";
+          }
+        }
+        
+        </script>
+        
+        
+<script>
+                window.onscroll = function() {myFunctionTwo()};
+        
+        function myFunctionTwo() {
+          if (document.documentElement.scrollTop > 50) {
+            document.getElementById("hidden").className = "gray-bg";
+          } else {
+            document.getElementById("hidden").className = "menu-bar";
+          }
+        }
+        </script>
+        
+        
 </body>
 </html>
