@@ -103,6 +103,8 @@ body{
     width: 50px;
     padding: 15px 35px;
     background-color: #ff214f;
+    box-shadow: 3px 2px 4px 3px crimson;
+    border-radius: 5%;
 }
 .Description{
     display: flex;
@@ -213,12 +215,23 @@ font-size: 20px;
     text-align: center;
     display: flex;
     justify-content: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
 }
 .double-link a {
     display: inline-block;
     margin-left: 80px;
     margin-bottom: 60px;
     width: 100px;
+  
+}
+#trans-btn{
+   transform:  rotate(-40deg);
+   background-color: #343a40;
+}
+#trans-btn-two{
+    transform:  rotate(-40deg); 
+    background-color: #343a40;
 }
 @keyframes logoanimate {
     0%{
