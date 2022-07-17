@@ -56,6 +56,7 @@ body{
     margin: 0 20px;
     padding: 10px 45px 15px 10px; 
     background-color: #ff214f;
+    animation: button-effect 3s ease 0s infinite alternate ;
 }
 .middle-menu{
     color: #ff214f;
@@ -105,6 +106,7 @@ body{
     background-color: #ff214f;
     box-shadow: 3px 2px 4px 3px crimson;
     border-radius: 5%;
+  
 }
 .Description{
     display: flex;
@@ -225,14 +227,15 @@ font-size: 20px;
     width: 100px;
   
 }
-#trans-btn{
+.trans-btn{
    transform:  rotate(-40deg);
    background-color: #343a40;
 }
-#trans-btn-two{
-    transform:  rotate(-40deg); 
-    background-color: #343a40;
+.trans-btn:hover{
+    box-shadow: 3px 2px 4px 3px green;  
+    color: #ff214f;
 }
+
 @keyframes logoanimate {
     0%{
        transform:  translate(-10px) scale(.5) rotate(-10deg); 
@@ -309,7 +312,7 @@ footer span{
     height: 100%;
     width: 100%;
     border-radius: 50%;
-    animation: round 3s ease .5s infinite alternate ;
+    animation: round 1s ease .5s infinite alternate ;
 }
 @keyframes round {
     
@@ -322,4 +325,46 @@ footer span{
          transform:  scale(1) ;
          /*transform: translate(10px) scale(1);*/
      }
+}
+@keyframes button-effect {
+     0% {
+        box-shadow: 3px 2px 4px 1px crimson;  
+        background-color: gray;border-radius: 5%;
+}
+25%{
+    box-shadow: 3px 2px 4px 1px greenyellow; background-color: silver;color: black;border-radius: 50%;
+}
+50%{
+    box-shadow: 3px 2px 4px 1px orchid;
+    background-color: #ff214f;color: black;border-radius: 5%;
+}
+100%{
+    box-shadow: 3px 2px 4px 1px slateblue;  
+    background-color: bisque;color: black;border-radius: 50%;
+}
+}
+@media screen and (max-width:576px) {
+    body{
+        width: 90vw;
+    }
+   .Description{
+    display: flex;
+    flex-direction: column;height: auto;
+   }
+    .about{
+        width: 100%;
+    }
+    .about img{
+        width: 90%;
+       margin: 0 5%;
+    }
+    
+}
+@media screen and (max-width:576px){
+    .about-text{
+        width:70%;
+        height:500px;
+        text-overflow: ellipsis;
+        background-color: black;
+    }
 }
