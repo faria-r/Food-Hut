@@ -143,6 +143,14 @@ body{
     height: 330px;
     width: 350px;
 }
+.imgs>img:hover{
+    transform: translate(-10px) scale(.75) rotate(180deg);
+    box-shadow: 4px 3px 5px 3px black;
+    transition: 1.5s;
+}
+.imgs{
+    background-image:conic-gradient(#ec8398,#fcb5c3,rgb(211, 52, 65),#ff214f,#ff675f);
+}
 #grid-title{
     grid-column-start: 1;
     grid-column-end: -1;
@@ -238,13 +246,13 @@ font-size: 20px;
 
 @keyframes logoanimate {
     0%{
-       transform:  translate(-10px) scale(.5) rotate(-10deg); 
-       /*  transform: translate(-10px) scale(.5); */
+       transform:  translate(-10px)  ; 
+       /*  transform: translate(-10px) scale(.5);scale(.95) */
     }
     
     100%{
-        transform: translate(10px) scale(1) rotate(380deg);
-        /*transform: translate(10px) scale(.75);*/
+        transform: translate(20px) ;
+        /*transform: translate(10px) scale(.75); scale(1) rotate(-1deg)*/
     }
     
 }
